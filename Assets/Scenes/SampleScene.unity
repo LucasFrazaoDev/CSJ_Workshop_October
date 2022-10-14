@@ -256,6 +256,7 @@ GameObject:
   - component: {fileID: 420250474}
   - component: {fileID: 420250476}
   - component: {fileID: 420250477}
+  - component: {fileID: 420250478}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -323,7 +324,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 420250471}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.68, y: -1, z: 0}
+  m_LocalPosition: {x: -6.68, y: -0.51, z: 0}
   m_LocalScale: {x: 2.0238042, y: 2.0238042, z: 2.0238042}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -370,7 +371,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!70 &420250477
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -387,6 +388,21 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.13}
   m_Size: {x: 0.69, y: 0.76}
   m_Direction: 0
+--- !u!114 &420250478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420250471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dac275cee0a292b4e9ddaa3f6424c42d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  jumpForce: 5
+  life: 10
 --- !u!1 &439414242
 GameObject:
   m_ObjectHideFlags: 0
@@ -4290,7 +4306,7 @@ GameObject:
   - component: {fileID: 1563388991}
   - component: {fileID: 1563388994}
   - component: {fileID: 1563388993}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5531,7 +5547,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1563388989}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
